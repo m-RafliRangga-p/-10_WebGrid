@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2>Mr.Rp GTR</h2>
+          <p class="sub-heading">GTR R34 & R35</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">$400.000</h4>
+          <p class="item">GTR R34</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">$600.000</h4>
+          <p class="item">GTR R35</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Mr.Rp GTR</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon">🛠️</div>
+          <h3>Service</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            vel recusandae, ipsam sit ab aspernatur?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">💵</div>
+          <h3>Buy</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            vel recusandae, ipsam sit ab aspernatur?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">💸</div>
+          <h3>Sell</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            vel recusandae, ipsam sit ab aspernatur?
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🚗</div>
+          <h3>Race</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            vel recusandae, ipsam sit ab aspernatur?
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="./src/1.jpeg" alt="">
+        <img src="./src/2.jpg" alt="">
+        <img src="./src/3.jpg" alt="">
+        <img src="./src/4.jpg" alt="">
+        <img src="./src/5.jpg" alt="">
+        <img src="./src/6.jpg" alt="">
+        <img src="./src/7.jpg" alt="">
+        <img src="./src/8.jpg" alt="">
+        <img src="./src/9.jpg" alt="">
+        <img src="./src/10.jpg" alt="">
+      </section>
     
-</body>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
 </html>
